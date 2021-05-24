@@ -29,7 +29,7 @@ bad = set([	"л", "р", "ј", "љ", "њ", "Ђ", "Ж", "Ј", "Л", "Љ",
 sufix = "о Полумента"
 
 def generate():
-    random.seed(datetime.now())
+    random.seed(datetime.now().timestamp())
     first = random.choice(start)
     second = random.choice(middle)
     while second == 'р':
